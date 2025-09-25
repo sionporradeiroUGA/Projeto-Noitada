@@ -10,6 +10,15 @@ Também é possível criar projetos, definindo seu nome, uma breve descrição, 
 
 Além disso, o sistema permite montar equipes, adicionando membros e permitindo que cada equipe participe de vários projetos ao mesmo tempo. Dessa forma, conseguimos organizar melhor as atividades e garantir que todos saibam suas responsabilidades.
 
+ProjetoJava/
+ └── src/
+      └── sistemagestao/
+           ├── Usuario.java
+           ├── Projeto.java
+           ├── Equipe.java
+           ├── SistemaGestao.java
+           └── Main.java
+
 ## Funcionalidades
 
 O programa é um sistema de gestão de projetos em Java, rodando no console.
