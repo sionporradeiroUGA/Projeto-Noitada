@@ -1,5 +1,11 @@
 # Projeto-Noitada
 projeto faculdade JAVA 
+/src
+  ├── Equipe.java
+  ├── Main.java
+  ├── Projeto.java
+  ├── SistemaGestao.java
+  └── Usuario.java
 
 Desenvolvemos,um projeto pensado para facilitar a organização e o acompanhamento de equipes e projetos dentro de uma empresa ou organização, conforme solicitado.
 
