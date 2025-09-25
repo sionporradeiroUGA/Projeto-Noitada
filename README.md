@@ -10,106 +10,105 @@ Também é possível criar projetos, definindo seu nome, uma breve descrição, 
 
 Além disso, o sistema permite montar equipes, adicionando membros e permitindo que cada equipe participe de vários projetos ao mesmo tempo. Dessa forma, conseguimos organizar melhor as atividades e garantir que todos saibam suas responsabilidades.
 
-Funcionalidades
+## Funcionalidades
 
 O programa é um sistema de gestão de projetos em Java, rodando no console.
-Ele permite:
 
-Cadastrar usuários (administrador, gerente, colaborador)
+### Recursos Principais
 
-Cadastrar projetos (associando um gerente responsável)
+- **Cadastrar usuários** (administrador, gerente, colaborador)
+- **Cadastrar projetos** (associando um gerente responsável)
+- **Cadastrar equipes** (com membros escolhidos da lista de usuários)
+- **Listar usuários, projetos e equipes**
+- **Menu interativo** no terminal
 
-Cadastrar equipes (com membros escolhidos da lista de usuários)
+---
 
-Listar usuários, projetos e equipes
-
-Tudo é feito através de um menu interativo no terminal.
-
-1. Usuario
+### 1. Usuario
 
 Representa uma pessoa cadastrada no sistema.
-Atributos principais:
 
-nome, cpf, email, cargo
+**Atributos principais:**
+- nome
+- cpf
+- email
+- cargo
+- login
+- senha
+- perfil – tipo de usuário (administrador, gerente, colaborador)
 
-login e senha
+**Funções importantes:**
+- `getNome()` – retorna o nome do usuário
+- `getPerfil()` – retorna o perfil
+- `toString()` – mostra informações resumidas no console
 
-perfil → define o tipo de usuário (administrador, gerente, colaborador).
+---
 
-Funções importantes:
-
-getNome() → retorna o nome do usuário
-
-getPerfil() → retorna o perfil
-
-toString() → usado para mostrar informações resumidas no console.
-
-2. Projeto
+### 2. Projeto
 
 Representa um projeto.
-Atributos principais:
 
-nome, descricao, dataInicio, dataFim
+**Atributos principais:**
+- nome
+- descricao
+- dataInicio
+- dataFim
+- status (planejado, em andamento, concluído, cancelado)
+- gerente (Usuario responsável)
 
-status (planejado, em andamento, concluído, cancelado)
+**Função principal:**
+- `toString()` – mostra resumo do projeto no console
 
-gerente (um Usuario responsável).
+---
 
-Função principal:
-
-toString() → mostra resumo do projeto no console.
-
-3. Equipe
+### 3. Equipe
 
 Representa uma equipe de usuários.
-Atributos:
 
-nome, descricao
+**Atributos:**
+- nome
+- descricao
+- membros (lista de objetos Usuario)
 
-membros (lista de objetos Usuario).
+**Funções:**
+- `adicionarMembro()` – adiciona usuários à equipe
+- `toString()` – mostra equipe + quantidade/membros
 
-Funções:
+---
 
-adicionarMembro() → adiciona usuários à equipe
+### 4. SistemaGestao
 
-toString() → mostra equipe + quantidade/membros.
+Funciona como um banco de dados em memória.
 
-4. SistemaGestao
+**Armazena listas de:**
+- usuarios
+- projetos
+- equipes
 
-É como um banco de dados em memória.
-Armazena listas de:
+**Métodos principais:**
+- cadastrar e consultar essas listas
 
-usuarios
+---
 
-projetos
-
-equipes
-
-E fornece métodos para cadastrar e consultar essas listas.
-
-MENU PRINCIPAL
+### Menu Principal
 
 O usuário pode escolher entre:
+1. Cadastrar Usuário
+2. Cadastrar Projeto
+3. Cadastrar Equipe
+4. Listar Usuários
+5. Listar Projetos
+6. Listar Equipes
+7. Sair
 
-1 Cadastrar Usuário
+---
 
-2 Cadastrar Projeto
+### Requisitos para rodar
 
-3 Cadastrar Equipe
-
-4 Listar Usuários
-
-5 Listar Projetos
-
-6 Listar Equipes
-
-Sair
-
-Requisitos para rodar
-
-Instalar JDK 8+
-
-Usar uma IDE (Eclipse, IntelliJ, NetBeans) ou linha de comando
+- Instalar JDK 8+
+- Usar uma IDE (Eclipse, IntelliJ, NetBeans) ou linha de comando
+- Organizar os arquivos corretamente
+- Executar a classe Main
 
 Organizar os arquivos corretamente
 
