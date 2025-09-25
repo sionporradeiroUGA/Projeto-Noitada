@@ -109,7 +109,3 @@ O usuário pode escolher entre:
 - Usar uma IDE (Eclipse, IntelliJ, NetBeans) ou linha de comando
 - Organizar os arquivos corretamente
 - Executar a classe Main
-
-Organizar os arquivos corretamente
-
-Executar a classe Main
