@@ -12,12 +12,21 @@ Além disso, o sistema permite montar equipes, adicionando membros e permitindo 
 
 ProjetoJava/
  └── src/
-      └── sistemagestao/
-           ├── Usuario.java
-           ├── Projeto.java
-           ├── Equipe.java
-           ├── SistemaGestao.java
-           └── Main.java
+      ├── main/
+      │    ├── java/
+      │    │    └── br/com/seuprojeto/sistemagestao/
+      │    │         ├── model/
+      │    │         │    ├── Usuario.java
+      │    │         │    ├── Projeto.java
+      │    │         │    └── Equipe.java
+      │    │         ├── service/
+      │    │         │    └── SistemaGestao.java
+      │    │         └── Main.java
+      │    └── resources/
+      └── test/
+           └── java/
+                └── br/com/seuprojeto/sistemagestao/
+                     └── (test classes)
 
 ## Funcionalidades
 
